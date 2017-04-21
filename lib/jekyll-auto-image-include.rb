@@ -1,10 +1,6 @@
 # For debugging purposes use: pp variable
 #require("pp")
 
-# Usage: {% auto_image %}
-# or
-# {% auto_image /path/to/images %}
-
 module Jekyll
 
   class AutoImage < Liquid::Tag
@@ -51,4 +47,4 @@ module Jekyll
 
 end
 
-Liquid::Template.register_tag("auto_image", Jekyll::AutoImage)
+Liquid::Template.register_tag("auto_image_include", Jekyll::AutoImage)

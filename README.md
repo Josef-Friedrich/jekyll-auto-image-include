@@ -2,6 +2,16 @@
 
 This jekyll plugin automatically includes images.
 
+## Usage
+
+```Liquid
+{% auto_image_include %}
+```
+
+```Liquid
+{% auto_image_include /path/to/images %}
+```
+
 ## Links
 
 * [Source code on Github](https://github.com/Josef-Friedrich/jekyll-auto-image-include)
