@@ -39,7 +39,7 @@ module Jekyll
       files.each do |image_fullpath|
         image_name = File.basename(image_fullpath)
         image_path = dir + '/' + image_name
-        output += "<a href=\"#{image_path}\"><img src=\"#{image_path}\"></a>"
+        output += "<a href=\"#{image_path}\"><img src=\"#{image_path}\" alt=\"#{image_name}\"></a>"
       end
       output
     end
