@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Josef-Friedrich/jekyll-auto-image-include.svg?branch=master)](https://travis-ci.org/Josef-Friedrich/jekyll-auto-image-include)
+
+
 # jekyll-auto-image-include
 
 This jekyll plugin automatically includes images.
