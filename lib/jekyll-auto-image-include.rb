@@ -35,7 +35,7 @@ module Jekyll
       output = ''
 
       folder = File.join(base_dir, dir, "*.{jpg,png}")
-      files = Dir.glob(folder)
+      files = Dir.glob(folder, File::FNM_CASEFOLD )
       files.each do |image_fullpath|
         image_name = File.basename(image_fullpath)
         image_path = dir + '/' + image_name
