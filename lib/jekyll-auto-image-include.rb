@@ -34,12 +34,13 @@ module Jekyll
 
       output = ''
 
-      folder = File.join(base_dir, dir, "*.{jpg,png}")
-      files = Dir.glob(folder, File::FNM_CASEFOLD )
+      folder = File.join(base_dir, dir, "*.{jpg,jpeg,png,gif,bmp,tif,tiff,svg}")
+      files = Dir.glob(folder, File::FNM_CASEFOLD).sort
       files.each do |image_fullpath|
         image_name = File.basename(image_fullpath)
+        puts image_name
         image_path = dir + '/' + image_name
-        output += "<a href=\"#{image_path}\"><img src=\"#{image_path}\" alt=\"#{image_name}\"></a>"
+        output += "\n<a href=\"#{image_path}\"><img src=\"#{image_path}\" alt=\"#{image_name}\"></a>"
       end
       output
     end
