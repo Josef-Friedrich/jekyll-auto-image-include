@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jekyll-auto-image-include'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2017-03-21'
   s.summary     = "Automatically includes images"
   s.description = "This jekyll plugin automatically includes images."
