@@ -2,4 +2,5 @@
 layout: default
 ---
 
-test
+* [Simple test](/page/index.html)
+* [Recursive test](/recursive/index.html)
