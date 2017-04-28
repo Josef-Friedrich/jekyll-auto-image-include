@@ -14,6 +14,17 @@ This jekyll plugin automatically includes images.
 {% auto_image_include /path/to/images %}
 ```
 
+### Configuration
+
+`_config.yml`:
+
+```yaml
+auto_image_include:
+  recursive: true
+  pattern: "*.{jpg,jpeg,png,gif,bmp,tif,tiff,svg}"
+
+```
+
 ## Links
 
 * [Source code on Github](https://github.com/Josef-Friedrich/jekyll-auto-image-include)
