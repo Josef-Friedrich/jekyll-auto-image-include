@@ -18,9 +18,11 @@ This jekyll plugin automatically includes images.
 
 `_config.yml`:
 
+Default values:
+
 ```yaml
 auto_image_include:
-  recursive: true
+  recursive: false
   pattern: "*.{jpg,jpeg,png,gif,bmp,tif,tiff,svg}"
 
 ```

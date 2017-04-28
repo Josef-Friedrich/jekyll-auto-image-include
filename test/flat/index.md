@@ -1,5 +1,5 @@
 ---
-title: recursive
+title: flat
 layout: page
 ---
 

@@ -2,5 +2,6 @@
 layout: default
 ---
 
-* [Simple test](/page/index.html)
-* [Recursive test](/recursive/index.html)
+* [flat](/flat/index.html)
+* [none](/none/index.html)
+* [recursive](/recursive/index.html)

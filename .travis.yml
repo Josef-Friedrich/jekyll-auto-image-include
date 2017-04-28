@@ -8,7 +8,6 @@ before_install:
   - sudo apt-get install -y bats
   - sudo apt-get install -y libxml2-utils
 
-before_script: ./script/init.sh
-script: bats script
+script: ./test.sh
 
 sudo: required

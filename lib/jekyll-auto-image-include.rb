@@ -1,5 +1,5 @@
 # For debugging purposes use: pp variable
-#require("pp")
+require("pp")
 
 module Jekyll
 
@@ -13,6 +13,9 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       base_dir = site.config['source']
+
+      recursion = '/'
+      pattern = '*.{jpg,jpeg,png,gif,bmp,tif,tiff,svg}'
 
       page = context.environments.first["page"]
       # page:
@@ -32,9 +35,20 @@ module Jekyll
         dir = @path.strip
       end
 
+      if site.config['auto_image_include']
+        config = site.config['auto_image_include']
+        if config['pattern']
+          pattern = config['pattern']
+        end
+
+        if config['recursive']
+          recursion = '/**/'
+        end
+      end
+
       output = ''
 
-      folder = File.join(base_dir, dir, "/**/*.{jpg,jpeg,png,gif,bmp,tif,tiff,svg}")
+      folder = File.join(base_dir, dir, recursion + pattern)
       files = Dir.glob(folder, File::FNM_CASEFOLD).sort
       files.each do |image_fullpath|
         image_path = image_fullpath.sub(base_dir, '')
