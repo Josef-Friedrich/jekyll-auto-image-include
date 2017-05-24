@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Josef-Friedrich/jekyll-auto-image-include.svg?branch=master)](https://travis-ci.org/Josef-Friedrich/jekyll-auto-image-include)
+[![Rubygems downloads](https://img.shields.io/gem/dt/jekyll-auto-image-include.svg)](https://rubygems.org/gems/jekyll-auto-image-include)
 
 # jekyll-auto-image-include
 
